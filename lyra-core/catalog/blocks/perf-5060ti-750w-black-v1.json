@@ -1,0 +1,64 @@
+{
+  "block_id": "perf-5060ti-750w-black-v1",
+  "block_type": "PerformanceBlock",
+  "name": "5060 Ti Performance Block (Black) | Nvidia RTX 5060 Ti 16GB | 750W PSU",
+  "version": "1.0.0",
+  "status": "active",
+  "tags": [
+    "nvidia",
+    "black",
+    "1080p-high",
+    "1440p-entry",
+    "futureheadroom",
+    "balanced",
+    "midgpu",
+    "16gbvram"
+  ],
+  "default_cost": 562.99,
+  "base_price": 699.99,
+  "markup_pct": 0.243,
+  "margin_min": 0.18,
+  "margin_target": 0.196,
+  "margin_max": 0.30,
+  "perf": {
+    "gpu_score": 12000,
+    "gpu_vram_gb": 16,
+    "gpu_power_draw_peak": 220,
+    "psu_wattage": 750,
+    "psu_efficiency": "80+ Bronze",
+    "target_segments": [
+      "1080p-high",
+      "1440p-entry",
+      "creator-light"
+    ]
+  },
+  "compat": {
+    "gpu_length_mm": 250,
+    "min_case_gpu_length_mm": 280,
+    "psu_form_factor": "ATX",
+    "psu_atx_version": "3.0",
+    "recommended_cpu_tier": "i7/R7",
+    "min_psu_efficiency": "80+ Bronze",
+    "required_pcie_power": "8-pin-or-adapter"
+  },
+  "parts": [
+    {
+      "category": "psu",
+      "name": "MSI MAG A750BN 750W Power Supply",
+      "vendor_sku": "PSU-MAG-A750BN",
+      "cost": 64.99,
+      "msrp": 119.99,
+      "quantity": 1
+    },
+    {
+      "category": "gpu",
+      "name": "MSI GeForce RTX 5060 Ti 16G Ventus 2X OC PLUS",
+      "vendor_sku": "GPU-RTX5060TI-V2X16",
+      "cost": 498.0,
+      "msrp": 599.99,
+      "quantity": 1
+    }
+  ],
+  "notes_internal": "High-refresh 1080p / entry 1440p performance bundle. Maintain target margin; upsell 5070 Ti block for creator 4K or AI path.",
+  "last_updated": "2025-07-19T23:15:00Z"
+}

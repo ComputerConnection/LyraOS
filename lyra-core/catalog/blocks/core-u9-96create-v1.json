@@ -1,0 +1,109 @@
+{
+  "block_id": "core-u9-96create-v1",
+  "block_type": "CoreBlock",
+  "name": "U9 96 Create Core Block | Intel Core Ultra 285K | Z890 ProArt | 4×24GB DDR5 8400MHz",
+  "version": "1.0.0",
+  "status": "active",
+  "tags": [
+    "intel",
+    "ultra285k",
+    "z890",
+    "proart",
+    "ddr5",
+    "96gb",
+    "creator",
+    "workstation",
+    "studio",
+    "highendcpu"
+  ],
+  "default_cost": 1554.97,
+  "base_price": 1999.99,
+  "margin_min": 0.18,
+  "margin_target": 0.28,
+  "margin_max": 0.33,
+  "cpu": {
+    "model": "Intel Core Ultra 285K",
+    "cores_p": 8,
+    "cores_e": 16,
+    "threads": 32,
+    "base_clock_ghz": 3.8,
+    "boost_clock_ghz": 5.7,
+    "cache_mb": 36,
+    "tdp_w": 125,
+    "tier": "U9-creator"
+  },
+  "memory": {
+    "total_gb": 96,
+    "modules": 4,
+    "per_module_gb": 24,
+    "speed_mhz": 8400,
+    "type": "DDR5",
+    "xmp_profile": "Intel XMP 3.0"
+  },
+  "motherboard": {
+    "model": "ASUS ProArt Z890 CREATOR WIFI",
+    "chipset": "Z890",
+    "socket": "LGA1851",
+    "pcie_gen_gpu": 5,
+    "pcie_m2_slots": 5,
+    "thunderbolt": true,
+    "lan": "10G+2.5G",
+    "wifi": "WiFi 7",
+    "form_factor": "ATX"
+  },
+  "recommendations": {
+    "pair_with_performance_block_min": "perf-5070ti-850w-black-v1",
+    "target_segments": [
+      "1440p-high",
+      "4k-entry",
+      "creator-high",
+      "ai-local-mid"
+    ]
+  },
+  "compat": {
+    "min_psu_watts": 750,
+    "min_cooling_class": "360mm-AIO",
+    "supported_memory_speed_mhz": 8400,
+    "max_gpu_length_mm": 350
+  },
+  "parts": [
+    {
+      "category": "cpu",
+      "name": "Intel Core Ultra 285K Desktop Processor",
+      "vendor_sku": "CPU-U285K",
+      "cost": 587.00,
+      "msrp": 629.99,
+      "quantity": 1
+    },
+    {
+      "category": "ram",
+      "name": "G.SKILL Trident Z5 CK RGB 96GB (2×48GB) DDR5 8400 CL40 Kit",
+      "vendor_sku": "RAM-Z5-96GB-8400",
+      "cost": 238.99,
+      "msrp": 349.99,
+      "quantity": 2
+    },
+    {
+      "category": "motherboard",
+      "name": "ASUS ProArt Z890 CREATOR WIFI ATX Motherboard",
+      "vendor_sku": "MB-Z890-PROART",
+      "cost": 489.99,
+      "msrp": 599.99,
+      "quantity": 1
+    }
+  ],
+  "perf": {
+    "multi_thread_score": 10000,
+    "single_thread_score": 2800,
+    "memory_bandwidth_gbps": 120,
+    "workloads": [
+      "editing",
+      "3d",
+      "ai-assist",
+      "photography",
+      "engineering"
+    ]
+  },
+  "notes_internal": "Creator-grade core bundle. Maintain ≥ target margin unless bundled with premium storage + AI add-on. Recalculate base_price if CPU cost delta >5% rolling 14d. Pair with 360mm AIO for sustained boost.",
+  "last_updated": "2025-07-19T23:40:00Z"
+}

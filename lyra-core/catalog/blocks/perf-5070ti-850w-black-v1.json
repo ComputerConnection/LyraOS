@@ -1,0 +1,59 @@
+{
+  "block_id": "perf-5070ti-850w-black-v1",
+  "block_type": "PerformanceBlock",
+  "name": "5070 Ti Performance Block (Black) | Nvidia RTX 5070 Ti 16GB | 850W PSU",
+  "version": "1.0.0",
+  "status": "active",
+  "tags": [
+    "nvidia",
+    "blackwell",
+    "16gb",
+    "1440p",
+    "entry4k",
+    "highendgpu",
+    "850w",
+    "black"
+  ],
+  "default_cost": 885.49,
+  "base_price": 1299.99,
+  "margin_min": 0.18,
+  "margin_target": 0.274,
+  "margin_max": 0.32,
+  "perf": {
+    "gpu_score": 16000,
+    "gpu_vram_gb": 16,
+    "gpu_power_draw_peak": 260,
+    "psu_wattage": 850,
+    "psu_efficiency": "80+ Gold",
+    "target_segments": ["1440p-high", "4k-entry", "creator-mid"]
+  },
+  "compat": {
+    "gpu_length_mm": 320,
+    "min_case_gpu_length_mm": 330,
+    "psu_form_factor": "ATX",
+    "psu_atx_version": "3.1",
+    "recommended_cpu_tier": "U9|R7",
+    "min_psu_efficiency": "80+ Gold",
+    "required_pcie_power": "12VHPWR"
+  },
+  "parts": [
+    {
+      "category": "psu",
+      "name": "Lian Li Edge Series 850W Full Modular Power Supply - Gold - ATX 3.1 BLACK",
+      "vendor_sku": "PSU-EDGE-850G-BLK",
+      "cost": 95.50,
+      "msrp": 179.99,
+      "quantity": 1
+    },
+    {
+      "category": "gpu",
+      "name": "MSI Gaming RTX 5070 Ti Ventus 3X OC 16GB GDDR7",
+      "vendor_sku": "GPU-RTX5070TI-V3X",
+      "cost": 789.99,
+      "msrp": 899.99,
+      "quantity": 1
+    }
+  ],
+  "notes_internal": "High-end 1440p / entry 4K performance block. Maintain target margin; only discount with premium Creator or AI upsell bundle. Monitor Blackwell supply—raise base_price if acceptance rate > target & inventory under 5 units.",
+  "last_updated": "2025-07-19T23:15:00Z"
+}

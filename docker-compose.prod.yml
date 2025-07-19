@@ -1,0 +1,16 @@
+services:
+  lyra-core:
+    build:
+      context: ./lyra-core
+      dockerfile: Dockerfile.prod
+    volumes: []            # No host mount in prod; use baked image
+    environment:
+      PYTHONUNBUFFERED: "1"
+
+  lyra-stack:
+    build:
+      context: ./lyra-stack
+      dockerfile: Dockerfile.prod
+    volumes: []
+    environment:
+      NODE_ENV: production

@@ -1,6 +1,14 @@
+# lyra-stack/Dockerfile  (DEV)
 FROM node:18
+
 WORKDIR /app
-COPY package.json .
-RUN npm install
+
+# Copy only package manifests first (leverages build cache)
+COPY package*.json ./
+RUN npm install --production
+
+# Copy source
 COPY . .
-CMD ["npm", "start"]
+
+EXPOSE 8081
+CMD ["node", "index.js"]

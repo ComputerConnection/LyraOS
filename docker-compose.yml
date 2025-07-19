@@ -1,16 +1,32 @@
-version: "3.9"
-
 services:
   lyra-core:
-    build: ./lyra-core
+    build:
+      context: ./lyra-core
+      dockerfile: Dockerfile          # use Dockerfile.prod in prod
+    # --- Add this volume block (live code sync + catalog JSON) ---
+    volumes:
+      - ./lyra-core:/app              # <— THIS is what lets new catalog/ code appear in container
     ports:
       - "8080:8080"
-    container_name: lyra-core
-    restart: unless-stopped
+    environment:
+      # Add secrets later via .env (DON'T commit real keys)
+      # OPENAI_API_KEY: "${OPENAI_API_KEY}"
+      PYTHONUNBUFFERED: "1"
+    # restart: unless-stopped          # optional in dev
 
   lyra-stack:
-    build: ./lyra-stack
+    build:
+      context: ./lyra-stack
+      dockerfile: Dockerfile
+    volumes:
+      - ./lyra-stack:/app
     ports:
       - "8081:8081"
-    container_name: lyra-stack
-    restart: unless-stopped
+    environment:
+      NODE_ENV: development
+    # restart: unless-stopped
+
+# (Optional) shared network (Compose auto-creates a default; explicit if you add more stacks later)
+# networks:
+#   default:
+#     name: lyra-net

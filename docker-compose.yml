@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  lyra-core:
+    build: ./lyra-core
+    ports:
+      - "8080:8080"
+    container_name: lyra-core
+    restart: unless-stopped
+
+  lyra-stack:
+    build: ./lyra-stack
+    ports:
+      - "8081:8081"
+    container_name: lyra-stack
+    restart: unless-stopped
